@@ -1,0 +1,12 @@
+{
+  "videos": [
+    {"title": "Awesome video"},
+    {"title": "Standard video"},
+    {"title": "Third video"},
+    {"title": "Video of a cat playing piano"},
+    {"title": "Video of someone watching a video"},
+    {"title": "Whitenoise-Video"},
+    {"title": "Video of something else"},
+    {"title": "Random Video"}
+  ]
+}
