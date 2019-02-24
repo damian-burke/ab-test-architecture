@@ -13,10 +13,6 @@ abstract class MvpPresenter<V : MvpContract.View>() : MvpContract.Presenter<V> {
         return viewRef?.get() != null
     }
 
-    //override fun getView(): V? {
-    //    return viewRef?.get()
-    //}
-
     override fun attachView(v: V) {
         viewRef = WeakReference(v)
         onViewAttached()
@@ -28,9 +24,7 @@ abstract class MvpPresenter<V : MvpContract.View>() : MvpContract.Presenter<V> {
         onViewDetached()
     }
 
-    override fun onViewAttached() {
-    }
+    override fun onViewAttached() = Unit
 
-    override fun onViewDetached() {
-    }
+    override fun onViewDetached() = Unit
 }
